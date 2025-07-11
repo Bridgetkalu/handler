@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handler</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+      .btn:hover{
+        color: red;
+        cursor: pointer;
+      }
+      .fixed{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+      }
+      .hover:hover{
+        background-color: rgb(2, 2, 53);
+        color: white;
+      }
+      .navbar a:hover{
+        color: red;
+      }
+      .navbar a:active{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+    <div class="">
+        <!-- First Nav -->
+        <div style="background-color: rgb(2, 2, 53);">
+           <div class="container-fluid d-flex justify-content-between align-items-center" id="arrow">
+             <div>
+             <img src="images/facebook-3000954_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
+             <img src="images/linked-in-2668696_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
+             <img src="images/app-7104075_1280.png" class="img-fluid mt-2" width="30" height="40" alt="">
+             <img src="images/twitter-3000965_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
+             </div>
+             <div class="d-flex justify-content-center align-items-center">
+                <div class="text-white px-3"><img src="images/iphone-160307_1280.png" class="img-fluid" height="10" width="10" alt="">+142 5897555</div>
+                <div class="text-white pe-2"><img src="images/envelope-34339_1280.png" class="img-fluid" height="30" width="30" alt="">Need help? Contact us via email</div>
+                <div class="text-white"><img src="images/pin-308802_1280.png" class="img-fluid" height="30" width="30" alt="">158 Avenues Street</div>
+             </div>
+           </div>
+        </div>
+    </div>
+    <!-- Second Nav -->
+     <div class="container-fluid ">
+        <div class="navbar navbar-expand-md d-flex">
+            <div class="navbar-brand d-flex">
+                <img src="images/podcast-removebg-preview.png" class="img-fluid" height="20" width="40" alt=""> 
+                <h2 class="fw-bolder ms-2 fs-7">H<span class="fs-3 fw-light">andler</span></h2>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-expanded="false" navbar-labels="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="menu">
+                <div class="navbar-nav">
+                    
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link fw-bolder active">HOME</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html" class="nav-link fw-bolder">ABOUT</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="services.html" class="nav-link fw-bolder">SERVICES</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="" class="nav-link fw-bolder">BLOG</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link fw-bolder">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+    <!-- Third Carousel -->
+    <div class="container-fluid">
+        <div class="carousel slide" data-bs-ride="carousel" interval="1000" id="handler">
+            <div class="carousel-inner">
+                <div class="carousel-item active" interval="1000">
+                    <img src="images/carousel1.jpg" class="img-fluid" height="50" width="100%" style="height: 500px;" alt="">
+                    <div class="carousel-caption">
+                    <h1 class="fw-bolder" style="font-size: 50px;">CREATIVE AGENCY</h1>
+                    <div>We Will Turn Your Problems Into</div>
+                    <div>Your Advantages</div>
+                    <button class="btn btn-dark btn-md text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item" interval="1000">
+                    <img src="images/carousel2.jpg" class="img-fluid" height="" width="100%" style="height: 500px;" alt="">
+                    <div class="carousel-caption">
+                    <h1 class="fw-bolder" style="font-size: 50px;">SMART SELECTION</h1>
+                    <p>We Are Experts In Design, Development & Implementation</p>
+                    <button class="btn btn-dark btn-md text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item" interval="1000">
+                    <img src="images/carousel3.jpg" class="img-fluid" height="50" width="100%" style="height: 500px;" alt="">
+                     <div class="carousel-caption">
+                    <h1 class="fw-bolder" style="font-size: 50px;">GROW BUSINESS</h1>
+                    <div>We Will Turn Your Problems Into</div>
+                    <div>Your Advantages</div>
+                    <button class="btn btn-dark btn-md text-white">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item" interval="1000">
+                    <img src="images/carousel4.jpg" class="img-fluid" height="50" width="100%" style="height: 500px;" alt="">
+                     <div class="carousel-caption">
+                    <h1 class="fw-bolder" style="font-size: 50px;">DIGITAL SOLUTION</h1>
+                    <p>We Are Experts In Design, Development & Implementation</p>
+                    <button class="btn btn-dark btn-md text-white">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#handler" aria-hidden="true">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#handler" aria-hidden="true">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <!-- Fourth Nav -->
+     <div class="container">
+        <div class="row d-flex justify-content-around align-items-center">
+            <div class="col-md-4">
+                <div class="fw-bolder fs-1">WE EXIST TO</div>
+                <div class="fw-bolder fs-1">CREATE THINGS</div>
+                <div class="fw-bolder fs-1">PEOPLE LOVE</div>
+            </div>
+            <div class="col-md-4 my-5">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellat, adipisci dolores vero, suscipit dignissimos explicabo a iusto eveniet animi perferendis atque corrupti labore voluptatem quia! Modi omnis reiciendis beatae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores</div>
+            </div>
+            <div class="col-md-4 my-5">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic repellat, adipisci dolores vero, suscipit dignissimos explicabo a iusto eveniet animi perferendis atque corrupti labore voluptatem quia! Modi omnis reiciendis beatae!Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, asperiores</div>
+            </div>
+        </div>
+     </div>
+     <!-- Fifth Card Like -->
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="container">
+                    <div class="card">
+                    <img src="images/carousel1.jpg" class="img-fluid" height="" width="" alt="">
+                    <div class="card-body card-img-overlay">
+                        <div class="card-text mt-3 text-white fw-bold" style="font-size: 40px;">
+                            <div>
+                            <div>Leading The</div>
+                            <div>Way In</div>
+                            <div>Digital</div>
+                            <div>Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div>
+                        <img src="images/note.jpeg" class="img-fluid" height="40" width="40" alt="">   </div>
+                    <div class="ps-3">
+                        <h5 style="font-size: 20px;">Design & Developing</h5>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit Harum</div>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="d-flex mt-4">
+                    <div>
+                        <img src="images/screen-1065137_1280.png" class="img-fluid" height="40" width="40" alt="">   </div>
+                    <div class="ps-3">
+                        <h5 style="font-size: 20px;">Fully Responsive</h5>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit Harum</div>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="d-flex mt-4">
+                    <div>
+                        <img src="images/podcast-removebg-preview.png" class="img-fluid" height="40" width="40" alt="">   </div>
+                    <div class="ps-3">
+                        <h5 style="font-size: 20px;">Fast Support</h5>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit Harum</div>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+                <div class="d-flex mt-4">
+                    <div>
+                        <img src="images/red bulb.jpeg" class="img-fluid" height="40" width="40" alt="">   </div>
+                    <div class="ps-3">
+                        <h5 style="font-size: 20px;">Our Innovation</h5>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit Harum</div>
+                        <div style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Next -->
+      <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="fw-bold fs-1">
+                    <div>EASY STEPS TO HAVING AN</div>
+                    <div>AWESOME WEBSITE <span class="text-danger">.</span></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                    <div>
+                        <img src="images/briefcase-155009_1280-removebg-preview.png" class="img-fluid" height="50" width="50" alt="">
+                    </div>
+                    <div>
+                        <h4 class="mt-3 fw-bold">Business Strategy</h4>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="images/cube-1656301_1280-removebg-preview.png" class="img-fluid" height="50" width="50" alt="">
+                    </div>
+                    <div>
+                        <h4 class="mt-3 fw-bold">Website Development</h4>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+                </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                <div>
+                    <div>
+                        <img src="images/social-media-5508549_1280-removebg-preview.png" class="img-fluid" height="50" width="50" alt="">
+                    </div>
+                    <div>
+                        <h4 class="mt-3 fw-bold">Marketing & Reporting</h4>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+                </div>
+                <div>
+                <div>
+                        <img src="images/iphone-160307_1280.png" class="img-fluid" height="30" width="30" alt="">
+                    </div>
+                    <div>
+                        <h4 class="mt-3 fw-bold">Mobile App Development</h4>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <div style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="images/mobiledevelopmentimg.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+      </div>
+<!-- Next -->
+      <div>
+        <div class="card mt-4">
+            <img src="images/our trust.jpg" class="img-fluid" style="height: 300px;" alt="">
+            <div class="card-header card-img-overlay">
+                <div class="card-text">
+                <div class="container">
+                    <div class="d-flex justify-content-around align-items-center text-black mt-5">
+                        <div>
+                            <div class="">TRUST US</div>
+                            <h1 class="fw-bold" style="font-size: 30px;">Our Fun</h1>
+                            <h1 class="fw-bold" style="font-size: 30px;">Facts</h1>
+                        </div>
+                       <div> 
+                            <div>141+</div>
+                            <hr>
+                            <div class="fw-bold">Campains</div>
+                        </div>
+                        <div> 
+                            <div>251+</div>
+                            <hr>
+                            <div class="fw-bold">Global Customer</div>
+                        </div>
+                        <div> 
+                            <div>880+</div>
+                            <hr>
+                            <div class="fw-bold">Completed Projects</div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+<!-- Portfolio -->
+      <div class="container mt-4">
+        <div class="text-center">
+            <h1 class="text-secondary">OUR PORTFOLIO <span class="text-danger">.</span></h1>
+        </div>
+        <div class="text-center d-flex justify-content-center align-items-center">
+            <button class="btn">All /</button>
+            <button class="btn">Architecture /</button>
+            <button class="btn">Web Design /</button>
+            <button class="btn">Creative /</button>
+            <button class="btn">Portfolio /</button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img src="images/portfolioimg1.jpg" class="img-fluid" height="400" width="400" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/portimg2.jpg" class="img-fluid" height="400" width="400" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/portiimg3.jpg" class="img-fluid" height="400" width="400" style="height: 240px;" alt="">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img src="images/portimg4.jpg" class="img-fluid" height="400" width="400" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/portimg5.jpg" class="img-fluid" height="400" width="400" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="images/smothie.jpg" class="img-fluid" height="400" width="400" style="height: 240px;" alt="">
+            </div>
+        </div>
+      </div>
+    
+    <!-- Join our family -->
+     <div class="card mt-5">
+        <img src="images/joinourfamilyimg.jpg" class="img-fluid" height="300" style="height: 400px;" alt="">
+        <div class="card-header card-img-overlay">
+            <div class="card-text d-flex justify-content-end align-items-center text-white mt-4">
+                <div>
+                <div>WELCOME ON BOARD</div>
+                <div class="mt-3 fw-bold fs-1">Join Our User Family</div>
+                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique <br> ducimus dolor hic quidem officiis cupiditate, facere expedita recusandae <br> molestiae maiores eveniet quisquam accusamus ex, nihil <br> obcaecati labore harum accusantium consequuntur.</div>
+                <div class="mt-4 fw-bold">ACTIVITY LEVEL</div>
+                <hr class="border border-5 border-danger">
+                <div class="mt-4 fw-bold">SATISFACTION</div>
+                <hr class="border border-5 border-danger">
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- TESTIMONIALS -->
+        <div class="container mt-5">
+            <h1 class="text-secondary text-center">TESTIMONIALS <span class="text-danger">.</span></h1>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="card-group">
+                        <div class="card" style="background-color: powderblue;">
+                            <div class="hover">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div>
+                                        <div class="mt-4">Lorem ipsum, dolor sit amet consectetur <br> elit. Harum quaerat, doloremque temporibus, <br> autem eaque cupiditate ipsa voluptatem, <br> magni alias modi commodi pariatur? Corrupti <br> nemo beatae id!</div>
+                                        <div class="mt-3 d-flex">
+                                            <div><img src="images/testimony1.jpg" class="img-fluid" height="60" width="60" alt=""></div>
+                                            <div class="ms-2">
+                                                <h5>Blanche Fields</h5>
+                                                <div>Marketing</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-group">
+                        <div class="card" style="background-color: powderblue;">
+                            <div class="hover">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div>
+                                        <div class="mt-4">Lorem ipsum, dolor sit amet consectetur<br> elit. Harum quaerat, doloremque temporibus, <br> autem eaque cupiditate ipsa voluptatem,<br> magni alias modi commodi pariatur? Corrupti<br> nemo beatae id!</div>
+                                        <div class="mt-3 d-flex">
+                                            <div><img src="images/testimony2.jpg" class="img-fluid" height="60" width="60" alt=""></div>
+                                            <div class="ms-2">
+                                                <h5>Elizabth Ker</h5>
+                                                <div>HR Officer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-group">
+                        <div class="card" style="background-color: powderblue;">
+                        <div class="hover">
+                            <div class="card-body">
+                                <div class="card-text">
+                                    <div>
+                                        <div class="mt-4">Lorem ipsum, dolor sit amet consectetur<br> elit. Harum quaerat, doloremque temporibus, <br> autem eaque cupiditate ipsa voluptatem,<br> magni alias modi commodi pariatur? Corrupti<br> nemo beatae id!</div>
+                                        <div class="mt-3 d-flex">
+                                            <div><img src="images/testimony3.jpg" class="img-fluid" height="60" width="60" alt=""></div>
+                                            <div class="ms-2">
+                                                <h5>Laura Sten</h5>
+                                                <div>PR Officer</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Final Footer -->
+       <div style="background-color: rgb(11, 11, 32);">
+         <div class="container mt-5">
+            <div class="row text-white">
+                <div class="col-md-4 mt-5">
+                    <div class="fw-bold fs-4">About</div>
+                    <hr>
+                    <div>Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Sunt expedita aperiam nostrum <br> fugiat, in quis mollitia dolorum magnam <br> accusantium officiis, quia quaerat ab. <br> Nihil ipsum officia maiores, hic eaque at?</div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="fw-bold fs-4">Quick Links</div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div>Home</div>
+                            <div class="mt-2">About</div>
+                            <div class="mt-2">Services</div>
+                            <div class="mt-2">Contact</div>
+                        </div>
+                        <div>
+                            <div>Careers</div>
+                            <div class="mt-2">Privacy Policy</div>
+                            <div class="mt-2">Terms and Conditions</div>
+                            <div class="mt-2">Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="fw-bold fs-4">Subscribe To Our Newsletter</div>
+                    <hr>
+                    <input type="email" placeholder="Enter your email" style="width: 360px; height: 50px;" class="text-center">
+                    <button class="text-center bg-danger mt-2" style="width: 360px; height: 50px;" >Subscribe</button>
+                </div>
+            </div>
+         </div>
+         <div style="background-color: rgb(6, 6, 41);" class="mt-5">
+            <div class="container-fluid d-flex justify-content-between align-items-center text-white">
+                <div>
+                <img src="images/facebook-3000954_1280-removebg-preview.png" class="img-fluid" height="30" width="50" alt="">
+                <img src="images/linked-in-2668696_1280-removebg-preview.png" class="img-fluid" height="30" width="50" alt="">
+                <img src="images/twitter-3000965_1280-removebg-preview.png" class="img-fluid" height="30" width="50" alt="">
+                </div>
+                <div>
+                <div>c 2025 Handler. All rights reserved. Design by Orji.G</div>
+                </div>
+            </div>
+        </div>
+       </div>
+     <!-- position -->
+        <div class="fixed">
+        <a href="#arrow"><img src="images/arrow_up-removebg-preview.png" class="img-fluid" height="50" width="50" alt=""></a>
+        </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
