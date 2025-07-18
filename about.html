@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handler</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             text-decoration: none;
+           
         }
        .btn:hover{
         color: red;
         cursor: pointer;
       }
-       a{
+      a{
+        
+        text-decoration: none!important;
         color: black;
-        text-decoration: none;
       } 
       a:hover{
         color: red;
@@ -30,18 +33,53 @@
         position: fixed;
         bottom: 10px;
         right: 10px;
+        background-color: #101d29;
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
+      .fixed:hover{
+        background-color: #ff6768;
+        color: white;
+      }
+      .back{
+        background-image: url(images/carousel4.jpg);
+        height: 140px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      a.read-more-btn.btn{
+        /* display: inline-block; */
+        width: 130px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #101d29;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+    a.read-more-btn.btn:hover{
+        background-color: #ff6768;
+    }
     </style>
 </head>
 <body>
         <!-- First Nav -->
         <div style="background-color: rgb(2, 2, 53);">
            <div class="container-fluid d-flex justify-content-between align-items-center" id="arrow">
-             <div>
-             <img src="images/facebook-3000954_1280-removebg-preview.png" class="img-fluid" width="30" height="40" alt="">
-             <img src="images/linked-in-2668696_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
-             <img src="images/app-7104075_1280.png" class="img-fluid mt-2" width="30" height="40" alt="">
-             <img src="images/twitter-3000965_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
+             <div class="d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook-f fa-lg me-2" style="color: white;"></i>
+                <i class="fa-brands fa-instagram fa-lg me-2" style="color: white;"></i>
+                <i class="fa-brands fa-twitter fa-lg me-2" style="color: white;"></i>
+                <i class="fa-brands fa-linkedin-in fa-lg me-2" style="color: white;"></i>
              </div>
              <div class="d-flex justify-content-center align-items-center">
                 <div class="text-white px-3"><img src="images/iphone-160307_1280.png" class="img-fluid" height="10" width="10" alt="">+142 5897555</div>
@@ -66,37 +104,41 @@
                 <div class="navbar-nav">
                     
                     <div class="nav-item">
-                        <a href="index.html" class="nav-link fw-bolder">HOME</a>
+                        <a href="index.html" class="nav-link fw-bold">HOME</a>
                     </div>
                     <div class="nav-item">
-                        <a href="about.html" class="nav-link fw-bolder">ABOUT</a>
+                        <a href="about.html" class="nav-link fw-bold">ABOUT</a>
                     </div>
                     <div class="nav-item">
-                        <a href="services.html" class="nav-link fw-bolder">SERVICES</a>
+                        <a href="services.html" class="nav-link fw-bold">SERVICES</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle fw-bold" role="button" data-bs-toggle="dropdown">BLOG</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item fw-bold" href="blog.html">Blog</a>
+                            <a class="dropdown-item fw-bold" href="blogsingle.html">Blog Single</a>
+                        </div>
                     </div>
                     <div class="nav-item">
-                        <a href="" class="nav-link fw-bolder">BLOG</a>
-                    </div>
-                    <div class="nav-item">
-                        <a href="contact.html" class="nav-link fw-bolder">CONTACT</a>
+                        <a href="contact.html" class="nav-link fw-bold">CONTACT</a>
                     </div>
                 </div>
             </div>
         </div>
      </div>
     <!-- First Background -->
-    <div class="card">
-        <img src="images/carousel4.jpg" class="img-fluid" height="200" width="100%" style="height: 300px;" alt="">
-        <div class="card-body card-img-overlay text-center text-black fw-bold fs-3">
-            <div class="card-text mt-5">
-                <div class="fs-2">About Us</div>
-                <div class="d-flex justify-content-center fw-light">
-                <div>Home /</div>
-                <div> About Us</div>
-                </div>
-            </div>
+     <div class="">
+        <div class="back">
+        <div  class="text-white d-flex justify-content-center align-items-center fw-bold">
+            <div class="text-white d-flex justify-content-center align-items-center fw-bold mt-5 fs-2">About Us</div>
         </div>
-    </div>
+                <div class="d-flex justify-content-center align-items-center fw-light">
+                <div class="text-white fs-4">Home</div>
+                <div class="text-white fs-4 mx-2">/</div>
+                <div class="text-white fs-4"> About Us</div>
+                </div>
+         </div>
+     </div>
     <!-- Hello Buddy -->
      <div class="container my-5">
         <div class="row text-dark">
@@ -107,12 +149,12 @@
                 <div> ut similique tenetur doloremque neque quis eum quam culpa sapiente</div> 
                 <div>perspiciatis provident facilis at rerum, sequi inventore.</div>
                 <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eos quia ut similique tenetur doloremque.</p>
-                <button class="btn btn-dark btn-outline-danger btn-md text-white">Read More</button>
+                <a href="about.html" class="read-more-btn btn mt-4">Read More</a>
             </div>
             <div class="col-md-6">
                 <div class="d-flex justify-content-around">
-                    <div><img src="images/about1.jpg" class="img-fluid" height="250" width="250" alt=""></div>
-                    <div><img src="images/ab2.jpg" class="img-fluid" height="250" width="250" alt=""></div>
+                    <div><img src="images/about1.jpg" class="img-fluid rounded-3" height="250" width="250" alt=""></div>
+                    <div><img src="images/ab2.jpg" class="img-fluid rounded-3" height="250" width="250" alt=""></div>
                 </div>
             </div>
         </div>
@@ -129,34 +171,34 @@
             <div class="d-flex justify-content-between mt-5">
                 <div>
                     <div class="d-flex btn">
-                        <div><img src="images/snow_flakes-removebg-preview.png" class="img-fluid me-3" height="20" width="20" alt=""></div>
-                        <div>Data Analytics</div>
+                        <i class="fa-solid fa-snowflake falg text-danger me-2"></i>
+                        <div class="text-secondary">Data Analytics</div>
                     </div>
                     <div class="d-flex mt-2 btn">
-                        <div><img src="images/snow_flakes-removebg-preview.png" class="img-fluid me-3" height="20" width="20" alt=""></div>
-                        <div>Technical SEO</div>
+                        <i class="fa-solid fa-snowflake falg text-danger me-2"></i>
+                        <div class="text-secondary">Technical SEO</div>
                     </div>
                     <div class="d-flex mt-2 btn">
-                        <div><img src="images/snow_flakes-removebg-preview.png" class="img-fluid me-3" height="20" width="20" alt=""></div>
-                        <div>Digital Marketing</div>
+                        <i class="fa-solid fa-snowflake falg text-danger me-2"></i>
+                        <div class="text-secondary">Digital Marketing</div>
                     </div>
                 </div>
                 <div>
                     <div class="d-flex btn">
-                        <div><img src="images/snow_flakes-removebg-preview.png" class="img-fluid me-3" height="20" width="20" alt=""></div>
-                        <div>Report Analysis</div>
+                        <i class="fa-solid fa-snowflake falg text-danger me-2"></i>
+                        <div class="text-secondary">Report Analysis</div>
                     </div>
                     <div class="d-flex mt-2 btn">
-                        <div><img src="images/snow_flakes-removebg-preview.png" class="img-fluid me-3" height="20" width="20" alt=""></div>
-                        <div>Data Development</div>
+                        <i class="fa-solid fa-snowflake falg text-danger me-2"></i>
+                        <div class="text-secondary">Data Development</div>
                     </div>
                 </div>
             </div>
-            <div class="d-flex mt-4">
+            <div class="d-flex">
                 <div>
-                    <button class="btn btn-dark btn-outline-danger btn-md text-white me-4">Read More</button>
+                    <a href="about.html" class="read-more-btn btn mt-4">Read More</a>
                 </div>
-                <div>
+                <div class="mt-4 ms-2">
                     <button class="btn  btn-outline-danger fw-bold">More Info</button>
                 </div>
             </div>
@@ -269,21 +311,24 @@
             </div>
          </div>
          <div style="background-color: rgb(6, 6, 41);" class="mt-5">
-            <div class="container-fluid d-flex justify-content-between align-items-center text-white">
-                <div>
-                <img src="images/facebook-3000954_1280-removebg-preview.png" class="img-fluid" height="30" width="50" alt="">
-                <img src="images/linked-in-2668696_1280-removebg-preview.png" class="img-fluid" height="30" width="50" alt="">
-                <img src="images/twitter-3000965_1280-removebg-preview.png" class="img-fluid" height="30" width="50" alt="">
+            <div class="container d-flex justify-content-between align-items-center text-white">
+                <div class="d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook-f fa-lg me-3" style="color: white;"></i>
+                <i class="fa-brands fa-instagram fa-lg me-3" style="color: white;"></i>
+                <i class="fa-brands fa-twitter fa-lg me-3" style="color: white;"></i>
+                <i class="fa-brands fa-linkedin-in fa-lg me-3" style="color: white;"></i>
                 </div>
                 <div>
-                <div>c 2025 Handler. All rights reserved. Design by Orji.G</div>
+                <div class="text-secondary">c 2025 Handler. All rights reserved. <span class="text-white fw-bold">Design by Orji.G</span></div>
                 </div>
             </div>
         </div>
        </div>
      <!-- position -->
-        <div class="fixed">
-        <a href="#arrow"><img src="images/arrow_up-removebg-preview.png" class="img-fluid" height="50" width="50" alt=""></a>
+        <div class="fixed" data-bs-toggle="tooltip" title="Go to top">
+            <a href="#arrow">
+                <i class="fa-solid fa-arrow-up fa-xl text-white"></i>
+            </a>
         </div>
 
 

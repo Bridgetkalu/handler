@@ -5,17 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handler</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .hover:hover{
+        background-color: rgb(2, 2, 53);
+        color: white;
+      }
+      a:hover{
+        color: red;
+        text-decoration: none;
+      }
+      .fixed{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background-color: #101d29;
+        border-radius: 50px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .fixed:hover{
+        background-color: #ff6768;
+        color: white;
+      }
+      a{
+        text-decoration: none;
+      }
+      .navbar a:hover{
+        color: red;
+      }
+      .navbar a:active{
+        color: red;
+      }
+       .back{
+        background-image: url(images/carousel4.jpg);
+        height: 140px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+      }
+      a.read-more-btn.btn{
+        /* display: inline-block; */
+        width: 130px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #101d29;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+    a.read-more-btn.btn:hover{
+        background-color: #ff6768;
+    }
+    </style>
 </head>
 <body>
         <div class="">
         <!-- First Nav -->
         <div style="background-color: rgb(2, 2, 53);">
            <div class="container-fluid d-flex justify-content-between align-items-center" id="arrow">
-             <div>
-             <img src="images/facebook-3000954_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
-             <img src="images/linked-in-2668696_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
-             <img src="images/app-7104075_1280.png" class="img-fluid mt-2" width="30" height="40" alt="">
-             <img src="images/twitter-3000965_1280-removebg-preview.png" class="img-fluid mt-2" width="30" height="40" alt="">
+             <div class="d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook-f fa-lg me-2" style="color: white;"></i>
+                <i class="fa-brands fa-instagram fa-lg me-2" style="color: white;"></i>
+                <i class="fa-brands fa-twitter fa-lg me-2" style="color: white;"></i>
+                <i class="fa-brands fa-linkedin-in fa-lg me-2" style="color: white;"></i>
              </div>
              <div class="d-flex justify-content-center align-items-center">
                 <div class="text-white px-3"><img src="images/iphone-160307_1280.png" class="img-fluid" height="10" width="10" alt="">+142 5897555</div>
@@ -49,8 +111,12 @@
                     <div class="nav-item">
                         <a href="services.html" class="nav-link fw-bolder">SERVICES</a>
                     </div>
-                    <div class="nav-item">
-                        <a href="" class="nav-link fw-bolder">BLOG</a>
+                    <div class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle fw-bolder" role="button" data-bs-toggle="dropdown">BLOG</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item fw-bolder" href="blog.html">Blog</a>
+                            <a class="dropdown-item fw-bolder" href="blogsingle.html">Blog Single</a>
+                        </div>
                     </div>
                     <div class="nav-item">
                         <a href="contact.html" class="nav-link fw-bolder">CONTACT</a>
@@ -60,19 +126,19 @@
         </div>
      </div>
     
-     <!-- First Background -->
-    <div class="card">
-        <img src="images/carousel4.jpg" class="img-fluid" height="200" width="100%" style="height: 200px;" alt="">
-        <div class="card-body card-img-overlay text-center text-black fs-3">
-            <div class="card-text mt-5">
-                <div class="fs-2 fw-bold">Services</div>
-                <div class="d-flex justify-content-center align-items-center">
-                <div>Home /</div>
-                <div>Services</div>
-                </div>
-            </div>
+    <!-- First Background -->
+     <div class="">
+        <div class="back">
+        <div  class="text-white d-flex justify-content-center align-items-center fw-bold">
+            <div class="text-white d-flex justify-content-center align-items-center fw-bold mt-5 fs-2">Services</div>
         </div>
-    </div>
+                <div class="d-flex justify-content-center align-items-center fw-light">
+                <div class="text-white fs-4">Home</div>
+                <div class="text-white fs-4 mx-2">/</div>
+                <div class="text-white fs-4">Services</div>
+                </div>
+         </div>
+     </div>
 
     <!-- What We Do -->
      <div class="container mt-5">
@@ -90,7 +156,7 @@
                         <div class="mt-3" style="font-size: 17px;">Aperiam sequi init consequuntur illum, libero justo pulvinar et.</div>
                     </div>
                 </div>
-                <button class="btn btn-dark btn-outline-danger btn-md text-white mt-5">Read More</button>
+                <a href="about.html" class="read-more-btn btn mt-4">Read More</a>
             </div>
             <div class="col-md-6">
                 <img src="images/serviceman1.jpg" class="img-fluid rounded-3" alt="">
@@ -101,20 +167,267 @@
     <!-- We are the best -->
      <div class="container mt-5">
         <div class="text-danger text-center">WE ARE THE BEST</div>
-        <h2 class="text-center fw-bold">WHAT WE OFFERING <span class="text-danger">.</span></h2>
-        <div class="text-center">Are you looking to create an eye-catching, cutting edge website &</div>
-        <div class="text-center">mobile apps for your business.</div>
+        <h1 class="text-center fw-bold">WHAT WE OFFERING <span class="text-danger">.</span></h1>
+        <div class="text-center text-secondary fs-5">Are you looking to create an eye-catching, cutting edge website &</div>
+        <div class="text-center text-secondary fs-5">mobile apps for your business.</div>
+        <div class="row mt-5">
+         <div class="col-md-4">
+            <div class="card-group">
+            <div class="card" style="box-shadow: 2px 2px 15px;">
+              <div class="hover">
+                <div class="card-body">
+                  <div class="card-text">
+                     <div class="text-center mt-5">
+                         <i class="fa-solid fa-bullhorn fa-2xl text-danger" ></i>
+                     </div>
+                        <div class="text-center mt-3 fw-bolder">
+                    <h4>Digital Campaign</h4>
+                </div>
+                <div class="text-center fs-5 text-secondary">
+                    <div>Lorem ipsum dolor sit amet,Ea</div>
+                    <div>consequuntur illum facere aperiam</div>
+                    <div>sequi optio consectetur.</div>
+                </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4">
+        <div class="card-group">
+            <div class="card" style="box-shadow: 2px 2px 15px;">
+             <div class="hover">
+               <div class="card-body">
+                <div class="card-text">
+                  <div class="text-center mt-5">
+                    <i class="fa-solid fa-umbrella fa-2xl text-danger"></i>
+                  </div>
+                <div class="text-center mt-3 fw-bolder">
+                    <h4>Advanced Security</h4>
+                </div>
+                <div class="text-center fs-5 text-secondary">
+                    <div>Lorem ipsum dolor sit amet,Ea</div>
+                    <div>consequuntur illum facere aperiam</div>
+                    <div>sequi optio consectetur.</div>
+                </div>
+                </div>
+              </div>
+             </div>
+             </div>
+             </div>
+            </div>
+        <div class="col-md-4">
+         <div class="card-group">
+           <div class="card" style="box-shadow: 1px 1px 15px;">
+            <div class="hover">
+              <div class="card-body">
+               <div class="card-text">
+                <div class="text-center mt-5">
+                    <i class="fa-regular fa-lightbulb fa-2xl text-danger" ></i>
+                </div>
+                <div class="text-center mt-3 fw-bolder">
+                    <h4>Easy Setup</h4>
+                </div>
+                <div class="text-center fs-5 text-secondary">
+                    <div>Lorem ipsum dolor sit amet,Ea</div>
+                    <div>consequuntur illum facere aperiam</div>
+                    <div>sequi optio consectetur.</div>
+                </div>
+            </div>
+            </div>
+             </div>
+            </div>
+            </div>
+            </div>
+        </div>
      </div>
+    
+    <!-- WEB DESIGN -->
+    <div class="mt-5" style="background:  rgb(16, 16, 36) ;">
+       <div class="container">
+         <div class="row text-white d-flex justify-content-around align-items-center">
+            <div class="col-md-4 mt-5">
+                    <div class="d-flex">
+                        <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                        <div class="ms-4 fw-bold fs-4 text-white mb-2">Web Design</div>
+                    </div>
+                <div class="text-secondary fs-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-mobile-screen-button fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Mobile Apps</div>
+                </div>
+                <div class="text-secondary fs-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-hourglass fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Animation</div>
+                </div>
+                <div class="text-secondary fs-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-white d-flex justify-content-around align-items-center">
+            <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Photoshop</div>
+                </div>
+                <div class="text-secondary fs-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Marketing</div>
+                </div>
+                <div class="text-secondary fs-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Devolpement</div>
+                </div>
+                <div class="text-secondary fs-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-white d-flex justify-content-around align-items-center mb-5">
+            <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Powerful Template</div>
+                </div>
+                <div class="text-secondary fs-5 mb-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Flexible Layout</div>
+                </div>
+                <div class="text-secondary fs-5 mb-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+                <div class="col-md-4 mt-5">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-cube fa-2xl text-danger"></i></div>
+                    <div class="ms-4 fw-bold fs-4">Fast Processing</div>
+                </div>
+                <div class="text-secondary fs-5 mb-5">
+                    <div>Lorem ipsum dolor sit amet, init sed</div>
+                    <div>adipisci ngelit. In euismod faucibus.</div>
+                </div>
+            </div>
+        </div>
+       </div>
+    </div>
 
+    <!-- SERVICES -->
+    <div class="container">
+        <div class="text-center text-danger">SERVICES</div>
+        <div class="text-center fw-bold fs-1" style="color:  rgb(16, 16, 36) ;">WE PROVIDE SOLUTIONS</div>
+        <div class="text-center fw-bold fs-1" style="color:  rgb(16, 16, 36) ;">TO OUR CLIENTS <span class="text-danger">.</span></div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div><img src="images/sol1.jpg" class="img-fluid rounded-3" width="600" height="600" alt=""></div>
+                <div class="mt-4 fw-bold"><a href="" class="fs-5 text-dark">Unlimited Power</a></div>
+            </div>
+            <div class="col-md-6">
+                <div><img src="images/bg2.jpg" class="img-fluid rounded-3" width="600" height="600" alt=""></div>
+                <div class="mt-4 fw-bold"><a href="" class="fs-5 text-dark">Effortless Updates</a></div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 mb-5">
+                <div><img src="images/bg3.jpg" class="img-fluid rounded-3" width="600" height="600" alt=""></div>
+                <div class="mt-4 fw-bold"><a href="" class="fs-5 text-dark">Creative Minds</a></div>
+            </div>
+            <div class="col-md-6 mb-5">
+                <div><img src="images/bg4.jpg" class="img-fluid rounded-3" width="600" height="600" alt=""></div>
+                <div class="mt-4 fw-bold"><a href="" class="fs-5 text-dark">Strong Empathy</a></div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
+    <!-- Final Footer -->
+       <div style="background-color: rgb(11, 11, 32);">
+         <div class="container mt-5">
+            <div class="row text-white">
+                <div class="col-md-4 mt-5">
+                    <div class="fw-bold fs-4">About</div>
+                    <hr>
+                    <div>Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Sunt expedita aperiam nostrum <br> fugiat, in quis mollitia dolorum magnam <br> accusantium officiis, quia quaerat ab. <br> Nihil ipsum officia maiores, hic eaque at?</div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="fw-bold fs-4">Quick Links</div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div>Home</div>
+                            <div class="mt-2">About</div>
+                            <div class="mt-2">Services</div>
+                            <div class="mt-2">Contact</div>
+                        </div>
+                        <div>
+                            <div>Careers</div>
+                            <div class="mt-2">Privacy Policy</div>
+                            <div class="mt-2">Terms and Conditions</div>
+                            <div class="mt-2">Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-5">
+                    <div class="fw-bold fs-4">Subscribe To Our Newsletter</div>
+                    <hr>
+                    <input type="email" placeholder="Enter your email" style="width: 360px; height: 50px;" class="text-center">
+                    <button class="text-center bg-danger mt-2" style="width: 360px; height: 50px;" >Subscribe</button>
+                </div>
+            </div>
+         </div>
+         <div style="background-color: rgb(6, 6, 41);" class="mt-5">
+            <div class="container d-flex justify-content-between align-items-center text-white">
+                <div class="d-flex justify-content-center align-items-center">
+                <i class="fa-brands fa-facebook-f fa-lg me-3" style="color: white;"></i>
+                <i class="fa-brands fa-instagram fa-lg me-3" style="color: white;"></i>
+                <i class="fa-brands fa-twitter fa-lg me-3" style="color: white;"></i>
+                <i class="fa-brands fa-linkedin-in fa-lg me-3" style="color: white;"></i>
+                </div>
+                <div>
+                <div class="text-secondary">c 2025 Handler. All rights reserved. <span class="text-white fw-bold">Design by Orji.G</span></div>
+                </div>
+            </div>
+        </div>
+       </div>
+    <!-- position -->
+        <div class="fixed" data-bs-toggle="tooltip" title="Go to top">
+            <a href="#arrow">
+                <i class="fa-solid fa-arrow-up fa-xl text-white"></i>
+            </a>
+        </div>
+     
 
 
 
